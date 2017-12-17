@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-yellow {
+  background-color: #F7B617;
+}
+
+.white {
+  color: #fff;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Styles - Section One */
+.bg-section-one {
+  background-image: url(../assets/images/taxi.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 100vh;
+  image-rendering: auto;
+}
+
+/* Styles - Section Two */
+
+/* Styles - Section Three */
+.bg-section-three {
+  background-image: url(../assets/images/conduce.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 100vh; 
+}
+
+/* Styles - Section Fourth */
+
+/* Styles - Footer */
