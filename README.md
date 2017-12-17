@@ -1,1 +1,1 @@
-# lab-car-boilerplate-materialize
+# LabCar boilerplate Materialize
