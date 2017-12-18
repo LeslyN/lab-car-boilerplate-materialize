@@ -180,88 +180,79 @@
 
   <!-- Modales -->
    <!-- Modal de Iniciar sesión -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content-register">
-      <div class="modal-user">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
-        <img class="profile" src="assets/images/userx.png" alt="user-picture">
+  <div id="loginModal" class="modal modal-content-register center">
+      <div>
+          <img class="profile" src="assets/images/userx.png" alt="user-picture">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">&times;</a>
       </div>
-      <hr>
-      <div class="modal-body-register">
-        <div class="log-in-input">
-          <div class="input-group input-group-lg">
-            <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-user-o" aria-hidden="true"></i></span>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
-          </div>
-          <div class="input-group input-group-lg">
-            <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-lock" aria-hidden="true"></i></span>
-            <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon3">
-          </div>
-          <button type="button" class="btn btn-warning btn-lg">LOG IN</button>
-          <P>Forgot password? <a class="click" href="#">Click here</a></P>
+
+    <div class="modal-content">
+      <form class="form-register" action="">
+        <div class="input-group">
+          <span class="fa fa-user"></span>
+          <input type="text" class="form-control" placeholder="Username">
         </div>
-      </div>
+        <div class="input-group">
+          <span class="fa fa-lock"></span>
+          <input type="text" class="form-control" placeholder="Password">
+        </div>
+        <button class="btn waves-effect amber darken-1 btn-warning">LOGING</button>
+        <p class="black-text">Forgot Password?
+        <span class="red-text">Click Here</span>
+        </p>
+      </form>
+
       </div>
   </div>
 
     <!-- Modal Regístrate -->
-  <div id="myModalEnrollment" class="modal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-content container-enrollment">
-      <button type="button" class="btn btn-info btn-lg close" data-dismiss="modal" aria-label="Close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </button>  
-      <div class="modal-body">
-        <div class="row account">
-          <div class="col m12">      
-            <button type="button" class="modal-title btn btn-primary btn-lg btn-block" id="myModalLabel">¿Ya tienes una cuenta?</button>
-            <h5 class="send-btn">o crea una cuenta nueva</h5>
-          </div>
-          <div class="input-enrollment col m6">
-            <input type="text" class="form-control" placeholder="Nombre">
-          </div>
-          <div class="input-enrollment col m6">
-            <input type="text" class="form-control" placeholder="Apellido">
-          </div>
-          <div class="input-enrollment col m12">
-            <input type="text" class="form-control" placeholder="e-mail: ejemplo@correo.mx">
-          </div>
-          <div class="input-enrollment col m12">
-            <input type="text" class="form-control" placeholder="Teléfono">
-          </div>
-          <div class="input-enrollment col m12">
-            <input type="text" class="form-control" placeholder="Contraseña">
-          </div>
-          <div class="input-enrollment col m12">
-            <input type="text" class="form-control" placeholder="Ciudad">
-          </div>
-          <div class="input-enrollment col m12">
-            <input type="text" class="form-control" placeholder="(Opcional) Código de invitación">
-          </div>
-          <div class="row">  
-            <div class="col m12">
-              <select class="form-control input-lg btn btn-default btn-lg btn-block">
-                <option value="question">¿Cómo te enteraste de nosotros?</option>
-                <option value="radio">Radio</option>
-                <option value="tv">Televisión</option>
-                <option value="newspaper">Periódicos</option>
-                <option value="social">Redes sociales</option>
-              </select>
+  <div id="myModalEnrollment" class="modal " role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <a type="button" class="btn-lg modal-close modal-action" data-dismiss="modal" aria-label="Close"></a>
+    <i class="fa fa-times" aria-hidden="true"></i>
+      <div class="modal-content container-enrollment">
+          <form class="form-enrollment" action="">
+              <button class="btn btn-info btn-block black">Ya tienes una cuenta?</button>
+              <p class="send-btn"> o crea una cuenta nueva</p>
+
+              <div class="input-enrollment col s6">
+              <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="input-enrollment col s6">
+              <input type="text" class="form-control" placeholder="Apellido">
             </div>
-          </div>
-          <div class="btn-send-register">
-            <button type="button" class="btn btn-info btn-lg btn-block send-btn">Enviar</button>
-          </div>
-        </div>
+            <div class="input-enrollment col m12">
+              <input type="text" class="form-control" placeholder="Correo Electrónico: ejemplo@correo.mx">
+            </div>
+            <div class="input-enrollment col m12">
+              <input type="text" class="form-control" placeholder="Teléfono">
+              </div>
+              <div class="input-enrollment col m12">
+              <input type="text" class="form-control" placeholder="Contraseña">
+              </div>
+              <div class="input-enrollment col m12">
+              <input type="text" class="form-control" placeholder="Ciudad">
+              </div>
+              <div class="input-enrollment col m12">
+              <input type="text" class="form-control" placeholder="(Opcional) Código de Invitación">
+              </div>
+              <button class="btn grey lighten-2 combo btn-block black-text">Cómo te enteraste de nosotros?
+                  <span class="fa fa-chevron-down"></span>
+              </button>
+              <button class="btn cyan btn-block">Enviar</button>
+
+          </form>
+
       </div>
     </div>
   </div>
-  
+
+
     <!-- Modal Conviértete en conductor -->
   <div class="modal" id="myModalDriver" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-content-driver">
       <div class="modal-header driver-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
         <h4 class="modal-title-driver" id="myModalLabel"><i class="fa fa-id-card" aria-hidden="true"></i>Be a driver!</h4>
+        <a type="button" class="modal-close modal-action" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></a>
       </div>
       <div class="modal-body">
         <div class="row">

@@ -347,48 +347,34 @@ footer {
   background-color: #08ac9d;
 }
 
-.modal-user {
-  text-align: center;
-}
-
-.input-group, .btn-warning {
-  margin: 1em;
-}
-
 .profile {
   border-radius: 7px;
   width: 200px;
   margin-top: 1.5em;
 }
 
-.log-in-input {
-  background-color: #f8f8f8;
-  padding: 2em;
-  text-align: center;
+.form-register {
+  background-color: #F5F5F5;
+  padding: 1em;
+  border-radius: 5px;
 }
 
-.click {
-  color: rgb(56, 172, 164);
+.input-group span {
+  color: black;
+  font-size: 24px;
+  padding-right: 0;
 }
 
-.fa-times {
-  color: #fff;
-  background-color: rgb(126, 125, 125);
-  border-radius: 0.2em;
-  margin-right: 0.5em;
-  margin-top: 0.5em;
+.input-group {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.btn-warning {
+  margin: 0 25%;
 }
 
 /* Sing in - Modal */
-.btn-primary {
-  background-color: #000;
-  vertical-align: middle;
-}
-
-.btn-default {
-  background-color: #DDDDDD;
-}
-
 .account {
   margin-top: -2em;
   margin-right: 1em;
@@ -399,18 +385,36 @@ footer {
 }
 
 .container-enrollment {
-  background-color: #A9A9A9;
+  background-color: rgb(182, 180, 180);
 }
 
 .input-enrollment {
   padding: 0.5em;
 }
-
+/* 
 .btn-send-register {
   margin: 0.5em 1.5em;
   vertical-align: middle;
+} */
+
+input[type=text]:not(.browser-default),
+input {
+    margin-left: 1em;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    outline: none;
+    width: 65%;
 }
 
+input[type=text]:not(.browser-default)::placeholder {
+    color: white;
+}
+
+input[placeholder="Nombre"] {
+  color: #000;
+}
 /* Become a drive - Modal */
 .modal-content-driver {
   background-color: #f8f8f8;
